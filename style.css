@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "sf_ulight";
+  src: url(fonts/SF-Pro-Display-Ultralight.otf);
+}
+
+@font-face {
+  font-family: "sf_light";
+  src: url(fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+  font-family: "sf_medium";
+  src: url(fonts/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+  font-family: "sf_regular";
+  src: url(fonts/SF-Pro-Display-Regular.otf);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  min-height: 5vh;
+}
+
+nav {
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 20rem;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 0.8rem;
+}
+
+nav ul li a, nav ul li svg {
+  vertical-align: middle;
+  font-weight: bold;
+  color: rgb(4, 30, 66);
+  cursor: pointer;
+  font-family: "sf_light";
+}
+
+#icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  flex: 2 1 30rem;
+  justify-content: center;
+}
+
+.logo img {
+  width: 7rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.hero {
+  min-height: 95vh;
+  background-image: url("/models/alyssa.jpg");
+  position: relative;
+  background-position: center;
+  display: flex;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  flex-wrap: wrap;
+}
+
+.hero * {
+  text-transform: uppercase;
+}
+
+.hero .empty {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30rem;
+}
+
+.hero .content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30rem;
+  align-items: center;
+  font-family: "sf_ulight";
+  padding: 3rem;
+}
+
+.content h1 {
+  margin-left: 16rem;
+  padding: 2rem;
+  font-size: 3rem;
+  transform: scale(1.7, 1);
+  -webkit-transform: scale(1.7, 1);
+  color: #fff;
+}
+
+.content button {
+  margin-left: 2rem;
+  outline: none;
+  border: 3px solid #fff;
+  background-color: transparent;
+  padding: 1rem 5rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'sf_medium';
+  z-index: 15;
+  transition: all 0.45s ease;
+}
+
+.content button:hover {
+  color: #d3c4c9;
+  background-color: #fff;
+  border: 3px solid #d3c4c9;
+}
+
+.grid-container-bg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  min-height: 100vh;
+  grid-template-areas: "men blue1 yellow1" "girl1 girl2 women" "collection-info-heading collection-info boygirl" "boygirl2 boygirl2 explore" "drops collection-info-2 girl3";
+}
+
+.men, .showcase_img {
+  min-height: 100vh;
+}
+
+.men {
+  grid-area: men;
+}
+
+.women {
+  grid-area: women;
+}
+
+.men, .women {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'sf_regular';
+  font-size: 1.5rem;
+}
+
+.men button, .women button {
+  margin-top: 1.3rem;
+  align-self: center;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem 5rem;
+  color: #000;
+  cursor: pointer;
+  font-family: 'sf_medium';
+  z-index: 15;
+  transition: all 0.45s ease;
+  border: 2px solid #000;
+  text-transform: uppercase;
+}
+
+#img1 {
+  grid-area: blue1;
+  background-image: url("/models/blue-1.jpg");
+}
+
+#img2 {
+  grid-area: yellow1;
+  background-image: url("/models/yellow-1.jpg");
+}
+
+.showcase_img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#img3 {
+  grid-area: girl1;
+  background-image: url("/models/girl-1.jpg");
+}
+
+#img4 {
+  grid-area: girl2;
+  background-image: url("/models/girl-2.jpg");
+}
+
+.collection-info-heading {
+  grid-area: collection-info-heading;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-info {
+  grid-area: collection-info;
+  display: flex;
+  font-family: 'sf_medium';
+  color: #888;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.collection-info p {
+  width: 40%;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.collection-info-heading h2 {
+  font-size: 3.2rem;
+  font-family: 'sf_light';
+}
+
+.collection-info button, .btnwrap button {
+  align-self: flex-start;
+  /* padding: 1rem 5rem 0.5rem 5rem; */
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  font-family: 'sf_medium';
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.btnwrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url('/icons/plus-circle.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.btnwrap {
+  position: relative;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+
+#img5 {
+  grid-area: boygirl;
+  background-position: top;
+  background-image: url("/models/bg1.1.jpg");
+}
+
+#img6 {
+  grid-area: boygirl2;
+  background-position: top;
+  background-image: url("/models/bg2.jpg");
+}
+
+.explore {
+  grid-area: explore;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  font-family: 'sf_medium';
+  text-transform: uppercase;
+}
+
+.explore .btnwrap, .explore h3 {
+  flex: 1 1 10rem;
+}
+
+.explore h3 {
+  text-align: center;
+  transform: rotate(90deg);
+  letter-spacing: 2rem;
+}
+
+.drops {
+  grid-area: drops;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-info-2 {
+  grid-area: collection-info-2;
+}
+
+.drops h3 {
+  text-align: center;
+  transform: rotate(90deg);
+  letter-spacing: 2rem;
+  font-family: 'sf_medium';
+  text-transform: uppercase;
+}
+
+#img7 {
+  grid-area: girl3;
+  background-position: top;
+  background-image: url("/models/girl-4.jpg");
+}
