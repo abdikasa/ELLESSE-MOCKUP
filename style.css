@@ -81,7 +81,7 @@ nav ul li a, nav ul li svg {
 
 .hero {
   min-height: 95vh;
-  background-image: url("/models/alyssa.jpg");
+  background-image: url("models/alyssa.jpg");
   position: relative;
   background-position: center;
   display: flex;
@@ -195,12 +195,12 @@ nav ul li a, nav ul li svg {
 
 #img1 {
   grid-area: blue1;
-  background-image: url("/models/blue-1.jpg");
+  background-image: url("models/blue-1.jpg");
 }
 
 #img2 {
   grid-area: yellow1;
-  background-image: url("/models/yellow-1.jpg");
+  background-image: url("models/yellow-1.jpg");
 }
 
 .showcase_img {
@@ -211,12 +211,12 @@ nav ul li a, nav ul li svg {
 
 #img3 {
   grid-area: girl1;
-  background-image: url("/models/girl-1.jpg");
+  background-image: url("models/girl-1.jpg");
 }
 
 #img4 {
   grid-area: girl2;
-  background-image: url("/models/girl-2.jpg");
+  background-image: url("models/girl-2.jpg");
 }
 
 .collection-info-heading {
@@ -267,7 +267,7 @@ nav ul li a, nav ul li svg {
   right: 0;
   width: 20px;
   height: 20px;
-  background-image: url('/icons/plus-circle.png');
+  background-image: url('icons/plus-circle.png');
   background-size: cover;
   cursor: pointer;
 }
@@ -281,13 +281,13 @@ nav ul li a, nav ul li svg {
 #img5 {
   grid-area: boygirl;
   background-position: top;
-  background-image: url("/models/bg1.1.jpg");
+  background-image: url("models/bg1.1.jpg");
 }
 
 #img6 {
   grid-area: boygirl2;
   background-position: top;
-  background-image: url("/models/bg2.jpg");
+  background-image: url("models/bg2.jpg");
 }
 
 .explore {
@@ -333,5 +333,5 @@ nav ul li a, nav ul li svg {
 #img7 {
   grid-area: girl3;
   background-position: top;
-  background-image: url("/models/girl-4.jpg");
+  background-image: url("models/girl-4.jpg");
 }
