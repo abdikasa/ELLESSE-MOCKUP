@@ -33,10 +33,6 @@ li {
   list-style: none;
 }
 
-img {
-background-repeat: no-repeat;
-}
-
 header {
   min-height: 5vh;
 }
@@ -89,6 +85,8 @@ nav ul li a, nav ul li svg {
   position: relative;
   background-position: center;
   display: flex;
+  background-repeat: repeat-x;
+  background-size: cover;
 }
 
 .hero::before {
